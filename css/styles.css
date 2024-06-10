@@ -71,3 +71,65 @@ h2{/* Horizontally centers the div */
 p{
     text-align: center;
 }
+
+/* PRODUCTS */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    padding: 5%;
+}
+
+.product-card {
+    border: 1px solid #ddd;/*remove when finished*/
+    padding: 5%;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.product-card button {
+    margin: 5%;
+}
+
+@media (max-width: 300px) {
+    footer {
+        background-color: aliceblue;
+        padding: 2%;
+        bottom: 0;
+        width: 100%;
+        text-align: left;
+        position:fixed;
+    }
+    
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10%;
+        gap: 10%;
+        padding: 10%;
+    }
+    
+    .product-card {
+        border: 1px solid #ddd;/*remove when finished*/
+        padding: 1
+        0%;
+        text-align: center;
+    }
+    
+    .product-card img {
+        max-width: 100%;
+        height:auto;
+        padding-bottom: 10%;
+        margin-bottom: 10%;
+    }
+    
+    .product-card button {
+        margin: 10%;
+    }
+}
