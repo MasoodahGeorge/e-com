@@ -17,7 +17,8 @@
 /* FOOTER */
 footer {
     background-color: aliceblue;
-    padding: 2%;
+    position: fixed;
+    padding: 1%;
     bottom: 0;
     width: 100%;
     text-align: left;

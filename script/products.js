@@ -69,6 +69,13 @@ document.getElementById('searchButton').addEventListener('click', () => {
         return matchesSearch && matchesCategory;
     });
 
+    if (filteredItems.length > 0) {
+        document.getElementById('not-found').style.display = 'none';
+        displayItems(filteredItems);
+    } else {
+        document.querySelector('.product-grid').innerHTML = '';
+        document.getElementById('not-found').style.display = 'block';
+    }
     displayItems(filteredItems);
 });
 
@@ -96,8 +103,8 @@ function addToCart(id) {
     localStorage.setItem('purchasedItems', JSON.stringify(purchasedItems))
 }
 
-purchasedButtons.forEach(button => {
-    button.addEventListener('click', (event) => {
-        addToCart(event.target.value)
-    })
-})
+// purchasedButtons.forEach(button => {
+//     button.addEventListener('click', (event) => {
+//         addToCart(event.target.value)
+//     })
+// })
