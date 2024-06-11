@@ -63,6 +63,11 @@ document.getElementById('searchButton').addEventListener('click', () => {
     displayItems(filteredItems);
 });
 
+//SPINNER
+window.onload = () => {
+    let spinner = document.querySelector('.spinner');
+    if (items.length === 0) {
+        spinner.style.display = 'block';}
 //Cart
 function addToCart(id) {
     let item = items.filter(object => object.id == id) //items= the array above
@@ -74,4 +79,4 @@ purchasedButtons.forEach(button => {
     button.addEventListener('click', (event) => {
         addToCart(event.target.value)
     })
-})
+})}
