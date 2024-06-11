@@ -72,8 +72,19 @@ p{
     text-align: center;
 }
 
+/* SPINNER */
+.spinner-border {
+    display: none; /* Hide spinner initially */
+}
+
 /* PRODUCTS */
+#search-div{
+    display: flex;
+    justify-content: center;
+}
+
 .product-grid {
+    background-image: url('https://i.postimg.cc/sgL39RQf/Untitled-design-4.png');
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5%;
@@ -81,7 +92,7 @@ p{
 }
 
 .product-card {
-    border: 1px solid #ddd;/*remove when finished*/
+    border: 1px solid #ffffff;/*remove when finished*/
     padding: 5%;
     text-align: center;
 }
